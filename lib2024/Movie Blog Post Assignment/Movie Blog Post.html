@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rocky Horror Is Really Good</title>
+	</head>
+
+	<body>
+		<!-- This should set the favicon.png file to be used as an icon for the webpage -->
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+
+		<!--Using auto here should preserve the aspect ratio of the image-->
+		<img src="rocky_image.jpg" alt="Frank and co." height="400" width="auto">
+		<h1>My favourite movie: <i>The Rocky Horror Picture Show</i></h1>
+
+		<!-- Using h2 a lot here because the font seems to match up with the assignment instructions -->
+		<h2>On a dark and stormy night Brad and Janet seek shelter in a mysterious castle. The owner of the castle invites them to see his latest creation: Rocky. They will never be the same again.</h2>
+		
+		<br>
+		<!-- Using the unordered list element here because it looks more slick than a bunch of paragraph elements -->
+		<h2>Cast list:</h2>
+		<ul><li>Tim Curry as Dr. Frank-N-Furter, a scientist</li>
+		<li>Susan Sarandon as Janet Weiss, a heroine</li>
+		<li>Barry Bostwick as Brad Majors, a hero</li>
+		<li>Richard O'Brien as Riff Raff, a handyman</li>
+		<li>Patrician Quinn as Magenta, a domestic</li>
+		<li>Peter Hinwood as Rocky Horror, a creation</li></ul>
+
+		<br>
+		<h2>Funniest line from the movie:</h2>
+		<h3>"Don't be upset. It was a mercy killing. He had a certain naive charm, but no muscle."</h3>
+
+		<br>
+		<h2>Movie ratings</h2>
+		<p>According to my friends and family:</p>
+
+		<!-- Adding labels here rather than paragraphs as w3schools recommends them for accessibility -->
+		<label for="storyline">Storyline:</label>
+		<meter id="storyline" value="9" min="0" max="10"></meter><br>
+		<label for="casting">Casting:</label>
+		<meter id="casting" value="10" min="0" max="10"></meter><br>
+		<label for="ending">Ending:</label>
+		<meter id="ending" value="8" min="0" max="10"></meter>
+		<br>
+
+		<br>
+		<p><mark>Note to self: buy tickets to live screening early.</mark></p>
+		<footer>Signed <i>Jeremy M. Kerr</i>, 2023-01-25</footer>
+	</body>
+</html>
