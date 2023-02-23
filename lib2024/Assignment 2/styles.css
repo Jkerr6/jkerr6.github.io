@@ -1,0 +1,23 @@
+body {
+	background-color: #E4FAE5;
+}
+
+/* margin: auto centres the box and text-align centres the text in the box. Added some fallback fonts under the font-family archetype for compatibility. */
+h1 {
+	width: 780px;
+	border: 6px solid DarkSeaGreen;
+	margin: auto;
+	text-align: center;
+	background: #E4FAE5;
+	font-family: Helvetica, "Times New Roman", Arial;
+}
+
+/* Centering our main image and downsizing it slightly. Using scale instead of width so image will still scale with browser zoom. Also wanted to reduce the margins slightly */
+#frogEye {
+	scale: 0.6;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -85px;
+	margin-bottom: -85px;
+} 
