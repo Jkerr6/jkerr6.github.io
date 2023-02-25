@@ -12,12 +12,36 @@ h1 {
 	font-family: Helvetica, "Times New Roman", Arial;
 }
 
-/* Centering our main image and downsizing it slightly. Using scale instead of width so image will still scale with browser zoom. Also wanted to reduce the margins slightly */
+
+
+div {
+	float: left;
+}
+
+#leftText {
+	margin: auto;
+	width: 30%;
+	font-size: 130%;
+
+}
+
 #frogEye {
-	scale: 0.6;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -85px;
-	margin-bottom: -85px;
-} 
+	margin: auto;
+	width: 90%;
+
+
+}
+
+#rightText {
+	margin: auto;
+	width: 30%;
+	text-align: right;
+	font-size: 130%;
+
+}
+
+
+div {
+	float: left;
+}
+
