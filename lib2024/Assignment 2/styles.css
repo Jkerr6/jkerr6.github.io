@@ -1,5 +1,5 @@
 body {
-	background-color: #E4FAE5;
+	background-color: black;
 }
 
 /* margin: auto centres the box and text-align centres the text in the box. Added some fallback fonts under the font-family archetype for compatibility. */
@@ -12,36 +12,29 @@ h1 {
 	font-family: Helvetica, "Times New Roman", Arial;
 }
 
-
-
+section {
+	background-color: #E4FAE5;
+	border: 6px solid DarkSeaGreen;
+	/* Overflow: auto stops my divs from breaking the section tag. */
+	overflow: auto;
+}
+ 
+/* Float left on the div here should make the three items appear next to each other. */
 div {
 	float: left;
 }
+
 
 #leftText {
-	margin: auto;
 	width: 30%;
 	font-size: 130%;
-
 }
 
-#frogEye {
-	margin: auto;
-	width: 90%;
-
-
-}
 
 #rightText {
-	margin: auto;
 	width: 30%;
-	text-align: right;
 	font-size: 130%;
-
 }
 
 
-div {
-	float: left;
-}
 
