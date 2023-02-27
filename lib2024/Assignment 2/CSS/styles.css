@@ -25,7 +25,7 @@ h1 {
 	/* The circle() function here makes the browser treat my image as a circle rather than a box with transparent edges. Hopefully this will let me get the text to wrap somehow. */
 	shape-outside: circle(50%);
 	border-radius: 50%;
-	position: relative;
+	margin: 20px 0 20px 20px;
 	
 }
 
@@ -33,25 +33,44 @@ h1 {
 
 #leftText,
 #rightText {
-	font-size: 17px;
-	text-align: justify;
-	padding: 10px;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#leftText {
+	text-align: right;
+}
+
+#rightText {
+	text-align: left;
 }
 
 /* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. I need to get rid of the white space now. */
 
 
+
 /* So this will make the left column of text float to the right of this copy of my frog eyeball. Nice. */
 #leftColumn img {
 	float: right;
-	left: 277px;
-	margin-left: -277px;
 }
 
 
 /* And this will make the right column of text float to the left of this copy of my frog eyeball. Also nice. */
 #rightColumn img {
 	float: left;
-	right: 277px;
-	margin-right: -277px;
+}
+
+/* We need to then bring both columns together */
+
+#leftColumn {
+	left: 204px;
+	position: relative;
+	margin-left: -204px;
+}
+
+#rightColumn {
+	right: 204px;
+	position: relative;
+	margin-right: -204px;
 }
