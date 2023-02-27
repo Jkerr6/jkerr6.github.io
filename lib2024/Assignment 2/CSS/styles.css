@@ -17,6 +17,7 @@ h1 {
 	background-color: #E4FAE5;
 	border: 6px solid DarkSeaGreen;
 	display: flex;
+	width: 100%;
 }
 
 
@@ -33,16 +34,21 @@ h1 {
 #leftText,
 #rightText {
 	font-size: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+
 }
+
+/* It is absolutely vital to set these margins or else the text will overlap at any zoom over 120%. */
 
 #leftText {
 	text-align: right;
+	margin-right: 222px;
 }
 
 #rightText {
 	text-align: left;
+	margin-left: 222px;
 }
 
 /* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. */
@@ -63,13 +69,13 @@ h1 {
 /* We need to then bring both columns together. The left and right make the two text boxes and images overlap so its like there's only one image even though there's actually two. The margin adjustments make up for the weird white space left by relative alignments. */
 
 #leftColumn {
-	left: 225px;
+	left: 219px;
 	position: relative;
 	margin-left: -224px;
 }
 
 #rightColumn {
-	right: 225px;
+	right: 219px;
 	position: relative;
 	margin-right: -224px;
 }
