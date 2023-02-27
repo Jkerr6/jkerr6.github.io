@@ -12,15 +12,45 @@ h1 {
 	font-family: Helvetica, "Times New Roman", Arial;
 }
 
-section {
+/* After hours of fighting with float, margin, overflow, text-align, width etc. I learned that I can simply put my two sections of text and image inside a larger container with the "display: flex;" element to get them to be aligned in even columns centered in the screen. Great. */
+#container {
 	background-color: #E4FAE5;
 	border: 6px solid DarkSeaGreen;
+	display: flex;
 	/* Overflow: auto stops my divs from breaking the section tag. */
-	overflow: auto;
+	/*Overflow: auto; */ 
 }
+
+#centreImage {
+	border-radius: 50%;
+}
+
+#leftText {
+	font-size: 22px;
+	text-align: justify;
+}
+
+#rightText {
+	font-size: 22px;
+	text-align: justify;
+}
+
+
+/* This is to centre the image. My understanding is that the display property makes this behave like a block and then the margin tags centre the image by telling the browser to put an even distance on either side of the image. The width has to be set for this to work although I am unsure why. */
+/* #centreImage {
+	display: block;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto; 
+} */
+
+
+
+
  
 /* Float left on the div here should make the three items appear next to each other. */
-div {
+
+/* div {
 	float: left;
 }
 
@@ -47,3 +77,5 @@ div {
 	margin-right: auto;
 	width: 50%;
 }
+
+*/
