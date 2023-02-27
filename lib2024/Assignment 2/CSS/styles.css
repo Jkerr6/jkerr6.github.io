@@ -17,12 +17,11 @@ h1 {
 	background-color: #E4FAE5;
 	border: 6px solid DarkSeaGreen;
 	display: flex;
-	position: relative;
 }
 
 
 .centreImage {
-	/* The circle() function here makes the browser treat my image as a circle rather than a box with transparent edges. Hopefully this will let me get the text to wrap somehow. */
+	/* The circle() function here makes the browser treat my image as a circle rather than a box with transparent edges. The border-radius is also necessary or the computer treats my beautiful circle as if it has an ugly, invisible box around it, digusting. */
 	shape-outside: circle(50%);
 	border-radius: 50%;
 	margin: 15px 15px 20px 20px;
@@ -46,7 +45,7 @@ h1 {
 	text-align: left;
 }
 
-/* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. I need to get rid of the white space now. */
+/* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. */
 
 
 
@@ -61,7 +60,7 @@ h1 {
 	float: left;
 }
 
-/* We need to then bring both columns together */
+/* We need to then bring both columns together. The left and right make the two text boxes and images overlap so its like there's only one image even though there's actually two. The margin adjustments make up for the weird white space left by relative alignments. */
 
 #leftColumn {
 	left: 225px;
