@@ -26,15 +26,24 @@ div {
 
 
 #leftText {
+	float: left;
 	width: 30%;
 	font-size: 130%;
 }
 
 
 #rightText {
+	float: right;
 	width: 30%;
 	font-size: 130%;
+	text-align: right;
 }
 
 
-
+#centreImage {
+	margin: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
