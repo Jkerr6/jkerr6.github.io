@@ -84,3 +84,35 @@ h1 {
 	margin-right: -224px;
 	width: 100%;
 }
+
+/* This is the watermark section. */
+
+/* Z-index puts the watermark underneath everything else. */
+
+/* I am using a fixed position here to keep the watermark in the place while all else scrolls. I am using the top 70% as it looked more centered than using 50%. */
+#watermarkContainer {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#watermarkText {
+	text-align: center;
+	color: #E4FAE5;
+	opacity: 0.3;
+	transform: rotate(-35deg);
+}
+
+/* Our second image */
+
+#rainFrog {
+	display: block;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
