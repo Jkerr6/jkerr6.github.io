@@ -17,65 +17,41 @@ h1 {
 	background-color: #E4FAE5;
 	border: 6px solid DarkSeaGreen;
 	display: flex;
-	/* Overflow: auto stops my divs from breaking the section tag. */
-	/*Overflow: auto; */ 
+	position: relative;
 }
 
-#centreImage {
+
+.centreImage {
+	/* The circle() function here makes the browser treat my image as a circle rather than a box with transparent edges. Hopefully this will let me get the text to wrap somehow. */
+	shape-outside: circle(50%);
 	border-radius: 50%;
+	position: relative;
+	
 }
 
-#leftText {
-	font-size: 22px;
-	text-align: justify;
-}
+/* Apparently you can affect multiple ids at once be separating them with commas. */
 
+#leftText,
 #rightText {
-	font-size: 22px;
+	font-size: 17px;
 	text-align: justify;
+	padding: 10px;
 }
 
-
-/* This is to centre the image. My understanding is that the display property makes this behave like a block and then the margin tags centre the image by telling the browser to put an even distance on either side of the image. The width has to be set for this to work although I am unsure why. */
-/* #centreImage {
-	display: block;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto; 
-} */
+/* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. I need to get rid of the white space now. */
 
 
-
-
- 
-/* Float left on the div here should make the three items appear next to each other. */
-
-/* div {
-	float: left;
-}
-
-
-#leftText {
-	float: left;
-	width: 30%;
-	font-size: 130%;
-}
-
-
-#rightText {
+/* So this will make the left column of text float to the right of this copy of my frog eyeball. Nice. */
+#leftColumn img {
 	float: right;
-	width: 30%;
-	font-size: 130%;
-	text-align: right;
+	left: 277px;
+	margin-left: -277px;
 }
 
 
-#centreImage {
-	margin: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+/* And this will make the right column of text float to the left of this copy of my frog eyeball. Also nice. */
+#rightColumn img {
+	float: left;
+	right: 277px;
+	margin-right: -277px;
 }
-
-*/
