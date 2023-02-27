@@ -17,7 +17,8 @@ h1 {
 	background-color: #E4FAE5;
 	border: 6px solid DarkSeaGreen;
 	display: flex;
-	width: 100%;
+	/* Setting width here to 99% to maintain scale of text box without weird bug where it creates horizontal scroll bar. */
+	width: 99%;
 }
 
 
@@ -43,12 +44,12 @@ h1 {
 
 #leftText {
 	text-align: right;
-	margin-right: 222px;
+	margin-right: 230px;
 }
 
 #rightText {
 	text-align: left;
-	margin-left: 222px;
+	margin-left: 230px;
 }
 
 /* To get the text to wrap properly I have created two overlapping images of the frog eye with a column of text wrapping on either side. Both are set to circle shapes. I used the position relative to achieve the overlap while keeping the positioning relative to the flexbox. */
@@ -68,14 +69,18 @@ h1 {
 
 /* We need to then bring both columns together. The left and right make the two text boxes and images overlap so its like there's only one image even though there's actually two. The margin adjustments make up for the weird white space left by relative alignments. */
 
+/* Another note: I've added the width scaling to both columns here so that the text remains readable even at 500% scaling. */
+
 #leftColumn {
 	left: 219px;
 	position: relative;
 	margin-left: -224px;
+	width: 100%;
 }
 
 #rightColumn {
 	right: 219px;
 	position: relative;
 	margin-right: -224px;
+	width: 100%;
 }
