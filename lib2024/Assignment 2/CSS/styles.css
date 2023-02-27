@@ -34,9 +34,10 @@ h1 {
 
 #leftText,
 #rightText {
-	font-size: 15px;
+	font-size: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
+	font-family: Helvetica, "Times New Roman", Arial;
 
 }
 
@@ -115,4 +116,62 @@ h1 {
 	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Making a dotted line */
+hr {
+	border: none;
+	border-top: 5px dashed DarkSeaGreen;
+}
+
+/* Making a grid container for six images. I am using two flex boxes contained within a grid because the flexboxes are easier to center. */
+
+
+#gridContainer {
+	margin: auto;
+	width: 1230px;
+	display: grid;
+	grid-template-rows: auto auto;
+	row-gap: 8px;
+	background-color: darkSeaGreen;
+	border: 10px solid darkSeaGreen;
+}
+
+/* The width property plus justify-content make it so there's a little gap between the boxes. */
+#row1 {
+	width: 1224px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#row2 {
+	width: 1224px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Need to fix how our figures look. The default spacing is wild. */
+
+figure {
+	width: 408px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+#row1 figure {
+	margin-top: 4px;
+	margin-bottom: 0px;
+}
+
+#row2 figure {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+figcaption {
+	text-align: center;
+	font-family: Helvetica, "Times New Roman", Arial;
+	font-weight: bold;
 }
