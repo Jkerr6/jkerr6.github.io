@@ -23,8 +23,13 @@ let frameCount = 0;
 //I some variables here to deal with moving the player sprite. keyPresses tracks what key is being pressed with the listeners below. PSPEED sets a default speed for the character.
 let keyPresses = {};
 const PSPEED = 1.5;
-let currentDirection = "Up";
-let isMoving = false;
+
+//We need to set up some variables for dealing with the direction of the sprite for the animations. The numbers correspond to the animation frames on the spritesheet.
+const FACINGDOWN = 3;
+const FACINGUP = 1;
+const FACINGLEFT = 7;
+const FACINGRIGHT = 5;
+let currentDirection = FACINGDOWN;
 
 //These two track the position of the player and can be plugged into the playerFrame function below using the playerLoop function further down below.
 let positionX = 400;
@@ -122,20 +127,20 @@ function keyUpListener(event) {
 function playerLoop () {
 	CTX.clearRect(0, 0, BOARD.width, BOARD.height);
 	if (keyPresses.w) {
-		positionY -= PSPEED;
-		currentDirection = "Up";
+	positionY -= PSPEED;
+	currentDirection = FACINGUP;
 	}	else if (keyPresses.s) {
-		positionY += PSPEED;
-		currentDirection = "Down";
+	positionY += PSPEED;
+	currentDirection = FACINGDOWN;
 	};
 	if (keyPresses.a) {
-		positionX -=PSPEED;
-		currentDirection = "Left";
+	positionX -=PSPEED;
+	currentDirection = FACINGLEFT;
 	}	else if (keyPresses.d) {
-		positionX += PSPEED;
-		currentDirection = "Right";
+	positionX += PSPEED;
+	currentDirection = FACINGRIGHT;
 	};
 
-	playerFrame(0, 0, positionX, positionY);
+	playerFrame(currentDirection, 0, positionX, positionY);
 	window.requestAnimationFrame(playerLoop);
 }
