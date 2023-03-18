@@ -1,0 +1,19 @@
+/* I wanted a dingy gradient background */
+body {
+	background-image: linear-gradient(to right, #25080b, #18240c);
+}
+
+h1 {
+	font-family: georgia, "times new roman", serif;
+	text-align: center;
+	background-color: black;
+	color: #99e550;
+	border: 2px solid #99e550;
+	width: 400px;
+	margin: auto;
+}
+
+#board {
+	background-color: black;
+
+}
