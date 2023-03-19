@@ -70,14 +70,17 @@ h1 {
  	z-index: 6;
  }
 
- /* Going to style my gameover screen here. Using fixed position so that it pops up in the centre of the screen always.*/
+ /* Going to style my gameover screen here. Using relative position to centre it. It is vital for it to be in the highest z index or the buttons can't be clicked. This starts in display: none so that its hidden when the game boots up.*/
  #gameOverBox {
+ 	display: none;
+ 	z-index: 7;
  	border: 2px solid #99e550;
  	position: relative;
  	width: 300px;
  	height: 180px;
  	margin: auto;
  	top: 185px;
+ 	background-color: black;
  }
 
  h2 {
@@ -91,13 +94,27 @@ h1 {
  	justify-content: center;
  }
  button {
+ 	display: inline-block;
  	color: #99e550;
  	background-color: black;
+ 	cursor: pointer;
  	font-family: georgia, "times new roman", serif;
  	margin-left: 30px;
  	margin-right: 30px;
  	scale: 135%;
+ 	transition-duration: 0.4;
  }
+
+/* Got a nice hover colour for the button. */
+ button:hover {
+ 	background-color: #003800;
+ }
+
+/* This very simple translation animation gives the buttons this nice motion when you click them. It just moves the text but it achieves the desired effect. */
+button:active {
+	transform: translateY(4px);
+	transform: translateX(2px);
+}
 
  img {
  	margin-bottom: -42px;

@@ -12,6 +12,9 @@ huntImg.src = "images/hunter.png";
 let yumImg = new Image();
 yumImg.src = "images/yum.png";
 
+//We need to grab our game over screen too.
+let gameOverScreen = document.getElementById("gameOverBox")
+
 //Loads the player when the image is done loading. If we don't do this, the whole thing just doesn't work.
 playerImg.onload = function() {
 	playerLoop();
@@ -145,8 +148,10 @@ let shouldHuntMove = false;
 //Alright, here we are defining a simple variable to track the player's score and a variable to hold the score counter itself.
 let score = 0;
 
-//I need a simple gameOver variable to stop certain functions when the player loses.
+//I need a simple gameOver variable to stop certain functions when the player loses. Also, some variables that link the the buttons on the game over screen.
 let gameOver = false;
+const GIVEUP = document.getElementById("giveUp");
+const TRYAGAIN = document.getElementById("tryAgain");
 
 //Going to write a function to track the score. This clears and redraws the score every time the playerLoop function below iterates. The score is simply defined by the score attribute which goes up whenever the game detects a collision between the player and the food bugs.
 function keepScore(){
@@ -659,14 +664,36 @@ function hunterCollison (){
 	FCTX3.clearRect(0, 0, FBOARD3.width, FBOARD3.height);
 	HCTX.clearRect(0, 0, HBOARD.width, HBOARD.height);
 	CTX.clearRect(0, 0, PBOARD.width, PBOARD.height);
+	showGameOver();
 };
 
 //This restarts the playerLoop and resets the triggers to respawn the various sprites.
 function startOver (){
 	gameOver = false;
-	playerLoop()
+	playerLoop();
+	showGameOver();
 	setTimeout(spawnFood1, 1000);
 	setTimeout(spawnFood2, Math.random() * 2000 + 5000);
 	setTimeout(spawnFood3, Math.random() * 5000 + 12000);
 	setTimeout(huntSpawn, Math.random() * 10000 + 16000);
+}
+
+//I need a function to show or hide the game over screen based on the global gameOver variable.
+function showGameOver () {
+ if (gameOver == false) {
+ 	gameOverScreen.style.display = "none";
+ } else {
+ 	gameOverScreen.style.display = "block";
+ };
+};
+
+//Last two things here: a function to close the game if "Give up?" is chosen in the game over screen and a function to restart the game if "Try again?" is chosen.
+
+TRYAGAIN.onclick = function(){
+	startOver();
+};
+
+//If you click give up the game will just close. Nice.
+GIVEUP.onclick = function(){
+	close();
 }
