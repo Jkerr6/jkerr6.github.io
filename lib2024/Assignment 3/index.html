@@ -16,13 +16,13 @@
 	<link rel="stylesheet" href="CSS/styles.css">
 	
 
-
 </head>
 
 
 <body>
 	<!-- Linking my Javascript for the actual game. -->
 	<h1> Bugs Will Feast </h1>
+
 	<!-- I have come to realize that I need to layer multiple canvases overtop of one another to achieve my goal for the game. You cannot render multiple sprites on only one canvas. We will begin by containing all canvases within one div that has the relative viewpoint positioning. Then, the other canvases will all have absolute positions. -->
 	<div id="board">
 		<canvas id="playerBoard" width="800" height="550"> </canvas>
@@ -34,9 +34,10 @@
 		<canvas id="scoreMessage2" width="800" height="550"></canvas>
 		<canvas id="scoreMessage3" width="800" height="550"></canvas>
 		<canvas id="scoreCounter" width="800" height="550"></canvas>
+
 		<!-- This is our game over screen. Two buttons in a div. One restarts all the game processes, and the other closes the webpage. -->
 		<div id="gameOverBox">
-			<img src="images/tombstone.png" alt="A pixel art tombstone." width="300" height="100">
+			<img id="tombstone" src="images/tombstone.png" alt="A pixel art tombstone." width="300" height="100">
 			<h2>You died!</h2>
 			<div id="buttonContainer">
 				<button id="tryAgain" type="button">Try again?</button>
@@ -44,10 +45,21 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="js/scripts.js"></script>
 
+	<!-- Making some simple game instructions. -->
+	<div id="howToPlayBox">
+		<h2>How to Play</h2>
+		<p>You are this bug. -> <img id="playerimage" src="images/playerimage.png" alt="A red and black bug."></p>
+		<p><img id="foodimage" src="images/foodimage.png" alt="A small green bug."><- Try to eat these bugs to make your score go up.</p>
+		<p>Don't get eaten by this bug or its game over. -> <img id="hunterimage" src="images/hunterimage.png" alt="A frightening, large bug."></p>
+		<p>To move: use the WASD keys. </p>
+		<p>To start a new game, click "try again" on the game over screen.</p>
+		<p>To give up and close the page, click "give up" on the game over screen.</p>
+
+	</div>
+
 </body>
-
-
 
 </html>

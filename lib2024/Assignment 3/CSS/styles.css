@@ -116,6 +116,34 @@ button:active {
 	transform: translateX(2px);
 }
 
- img {
+ #tombstone {
  	margin-bottom: -42px;
  }
+
+/* This is to format our instructions box. We will start with the container. */
+#howToPlayBox {
+	background-color: black;
+	display: block;
+	margin: auto;
+	width: 800px;
+	border: 1px solid #99e550;
+	margin-top: 20px;
+}
+
+p {
+	font-family: georgia, "times new roman", serif;
+	text-align: center;
+	color: #99e550;
+}
+
+#hunterimage {
+	margin-bottom: -15px;
+}
+
+#foodimage {
+	margin-bottom: -12px;
+}
+
+#playerimage {
+	margin-bottom: -7px;
+}

@@ -128,7 +128,7 @@ let whichFoodAnim3 = 0;
 let shouldFoodMove3 = false;
 
 //Finally, we must program in our predator bug variables. I'm going to be labelling them with "h" for hunter.
-const HSPEED = 2.1;
+const HSPEED = 2.4;
 const HUNTLOOP = [0, 1, 2, 3, 4, 5, 6, 7];
 const HWIDTH = 48;
 const HHEIGHT = 48;
@@ -576,7 +576,7 @@ function chooseHuntMove (){
 	};
 };
 
-setInterval(chooseHuntMove, 2000);
+setInterval(chooseHuntMove, 1300);
 
 //Now we come upon our collisions. Beautiful. All the bugs are already tracking their locations. I'm going to write a function that compares the location of the player to the location of the other bugs then runs a specific function for each.
 
