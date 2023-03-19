@@ -75,17 +75,30 @@ h1 {
  	border: 2px solid #99e550;
  	position: relative;
  	width: 300px;
- 	height: 150px;
+ 	height: 180px;
  	margin: auto;
  	top: 185px;
  }
 
+ h2 {
+ 	font-family: georgia, "times new roman", serif;
+	text-align: center;
+ 	color: #99e550;
+ }
+
+ #buttonContainer {
+ 	display: flex;
+ 	justify-content: center;
+ }
  button {
  	color: #99e550;
  	background-color: black;
  	font-family: georgia, "times new roman", serif;
+ 	margin-left: 30px;
+ 	margin-right: 30px;
+ 	scale: 135%;
  }
 
  img {
- 	border: 1px solid #99e550;
+ 	margin-bottom: -42px;
  }
