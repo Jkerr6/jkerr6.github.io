@@ -19,6 +19,37 @@ h1 {
 	display: block;
 	margin: auto;
 	margin-top: 15px;
-	/* Experimenting with this method from Mozilla to try to keep my pixel art crisp rather than blurry. */
-	image-rendering: pixelated;
+	border: 1px solid #99e550;
+	/* We make the position relative to keep the container relative to the viewport */
+	position: relative;
+	height: 550px;
+	width: 800px;
 }
+ canvas {
+ 	/* Experimenting with this method from Mozilla to try to keep my pixel art crisp rather than blurry. */
+	image-rendering: pixelated;
+	/* Making the position absolute should let me layer the canvases over one another. */
+	position: absolute;
+	/* Need to make sure the background is transparent */
+	background-color: transparent;
+ }
+
+#playerBoard {
+	/* Using this Z-index to make the player sprite the second highest layer (behind the predator). */
+	z-index: 4;
+}
+ #foodBoard1 {
+ 	z-index: 3;
+ }
+
+ #foodBoard2 {
+ 	z-index: 2;
+ }
+
+ #foodBoard3 {
+ 	z-index: 1;
+ }
+
+ #predatorBoard {
+ 	z-index: 5;
+ }

@@ -23,8 +23,14 @@
 <body>
 	<!-- Linking my Javascript for the actual game. -->
 	<h1> Bugs Will Feast </h1>
-	<!-- This will be the board that the game is played on. The canvas will let us draw our sprites. -->
-	<canvas id="board" width="800" height="550"> </canvas>
+	<!-- I have come to realize that I need to layer multiple canvases overtop of one another to achieve my goal for the game. You cannot render multiple sprites on only one canvas. We will begin by containing all canvases within one div that has the relative viewpoint positioning. Then, the other canvases will all have absolute positions. -->
+	<div id="board">
+		<canvas id="playerBoard" width="800" height="550"> </canvas>
+		<canvas id="predatorBoard" width="800" height="550"></canvas>
+		<canvas id="foodBoard1" width="800" height="550"></canvas>
+		<canvas id="foodBoard2" width="800" height="550"></canvas>
+		<canvas id="foodBoard3" width="800" height="550"></canvas>
+	</div>
 	<script src="js/scripts.js"></script>
 
 </body>
