@@ -50,6 +50,42 @@ h1 {
  	z-index: 1;
  }
 
- #predatorBoard {
+ #hunterBoard {
  	z-index: 5;
+ }
+
+/* This is for drawing the "yum" image" after eating a bug. There are three of these so I can have them disappear staggered rather than all at once.*/
+ #scoreMessage1 {
+ 	z-index: 0;
+ }
+
+  #scoreMessage2 {
+ 	z-index: 0;
+ }
+
+  #scoreMessage3 {
+ 	z-index: 0;
+ }
+   #scoreCounter {
+ 	z-index: 6;
+ }
+
+ /* Going to style my gameover screen here. Using fixed position so that it pops up in the centre of the screen always.*/
+ #gameOverBox {
+ 	border: 2px solid #99e550;
+ 	position: relative;
+ 	width: 300px;
+ 	height: 150px;
+ 	margin: auto;
+ 	top: 185px;
+ }
+
+ button {
+ 	color: #99e550;
+ 	background-color: black;
+ 	font-family: georgia, "times new roman", serif;
+ }
+
+ img {
+ 	border: 1px solid #99e550;
  }

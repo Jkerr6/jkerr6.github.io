@@ -26,10 +26,21 @@
 	<!-- I have come to realize that I need to layer multiple canvases overtop of one another to achieve my goal for the game. You cannot render multiple sprites on only one canvas. We will begin by containing all canvases within one div that has the relative viewpoint positioning. Then, the other canvases will all have absolute positions. -->
 	<div id="board">
 		<canvas id="playerBoard" width="800" height="550"> </canvas>
-		<canvas id="predatorBoard" width="800" height="550"></canvas>
+		<canvas id="hunterBoard" width="800" height="550"></canvas>
 		<canvas id="foodBoard1" width="800" height="550"></canvas>
 		<canvas id="foodBoard2" width="800" height="550"></canvas>
 		<canvas id="foodBoard3" width="800" height="550"></canvas>
+		<canvas id="scoreMessage1" width="800" height="550"></canvas>
+		<canvas id="scoreMessage2" width="800" height="550"></canvas>
+		<canvas id="scoreMessage3" width="800" height="550"></canvas>
+		<canvas id="scoreCounter" width="800" height="550"></canvas>
+		<!-- This is our game over screen. Two buttons in a div. One restarts all the game processes, and the other closes the webpage. -->
+		<div id="gameOverBox">
+			<div id=imgContainer><img src="images/tombstone.png" alt="A pixel art tombstone." width="100" height="100"></div>
+			<br>
+			<button type="button">Try again?</button>
+			<button type="button">Give up?</button>
+		</div>
 	</div>
 	<script src="js/scripts.js"></script>
 
