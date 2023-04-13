@@ -1,0 +1,12 @@
+body {
+	background-image: linear-gradient(to right, #1584D6, #ac3232);
+}
+
+h1 {
+	text-align: center;
+}
+
+#thermbody {
+	background-color: #10629c;
+	border: 4px solid;
+}

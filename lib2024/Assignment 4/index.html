@@ -1,0 +1,55 @@
+<!Doctype html>
+<html land="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- SEO tags here. Sourced from W3Schools and documents posted in Brightspace. -->
+	<title> Celsius/Fahrenheit Conversion Calculator </title>
+
+	<meta name="description" content="A calculator for converting Fahrenheit to Celsius and vice-versa.">
+	<meta name="keywords" content="celsius, fahrenheit, conversion, temperature, weather, climate">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Jeremy M. Kerr">
+
+	<!-- Setting up our viewport so our website looks good on different devices. (From W3Schools) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Linking our stylesheet and page icon. Icon designed by me. -->
+	<link rel="icon" type="images/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+	<div id="thermbody">
+	<h1> Fahrenheit to Celsius (°F to °C) </h1>
+
+	<!-- This form controls the information that users can input. I am using some radials and a text box. -->
+	<form>
+
+		<div>
+			<label for="celsiusrad"> Celsius </label>
+			<input type="radio" id="celsiusrad" name="conversionrad" value="celsius">
+			<label for="fahrenheitrad"> Fahrenheit </label>
+			<input type="radio" id="fahrenheitrad" name="conversionrad" value="fahenrenheit">
+		</div>
+
+		<div>
+			<label for="conversiontext"> Convert: </label>
+			<input type="text" id="conversiontext">
+		</div>
+	
+		<div>
+			<input type="button" id="convertbutton" value="Convert">
+			<input type="button" id="clearbutton" value="Clear">
+		</div>
+
+	</form>
+
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
