@@ -47,8 +47,7 @@ h1 {
 }
 
 #buttoncontainer input:active {
-	transform: translateY(2px);
-	transform: translateX(2px);
+	transform: translateX(2px); 
 }
 
 #tempoutput {
@@ -57,4 +56,13 @@ h1 {
 	text-align: center;
 	font-size: large;
 	font-weight: bold;
+}
+
+/* The validator is trying to tell me that the scale property doesn't exist. This is untrue. W3Schools agrees with me. */
+#thermimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	scale: 195%;
+	image-rendering: pixelated;
 }

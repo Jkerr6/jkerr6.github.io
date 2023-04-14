@@ -1,9 +1,6 @@
 /* This variable detects our input. */
 let tempInput; 
 
-/* This variable will be our output */
-let tempAnswer;
-
 /* This variable tells the computer where to put out output. */
 let tempOutput = document.getElementById('tempoutput');
 
@@ -40,7 +37,7 @@ function ConvertTemp() {
         tempOutput.innerText = "Please enter a temperature.";
     } else {
         /* This part runs if there is an input and tries to convert the string to a number. If it returns NaN it displays another error message. I learned the Number() function from Jessica Wilkins at FreeCodeCamp. */
-        tempInput = Number(document.getElementById('conversiontext').value)
+        tempInput = Number(document.getElementById('conversiontext').value);
         /* I learned isNaN from W3Schools */
         if (isNaN(tempInput)) {
             tempOutput.innerText = "Please enter a number.";
@@ -64,5 +61,5 @@ function ConvertTemp() {
 function clearForm() {
     tempInput = "";
     document.getElementById('conversiontext').value = "";
-    tempOutput.innerText = "Please enter a temperature to convert and select Celsius or Fahrenheit."
+    tempOutput.innerText = "Please enter a temperature and select Celsius or Fahrenheit.";
 }

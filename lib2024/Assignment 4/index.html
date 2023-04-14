@@ -1,5 +1,5 @@
 <!Doctype html>
-<html land="en">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -25,33 +25,38 @@
 <body>
 	<!-- Thermbody will contain the conversion controls. -->
 	<div id="thermbody">
-	<h1> Fahrenheit/Celsius Converter </h1>
+		<h1> Fahrenheit/Celsius Converter </h1>
 
-	<!-- This form controls the information that users can input. I am using some radials and a text box. -->
-	<form>
+		<!-- This form controls the information that users can input. I am using some radials and a text box. -->
+		<form>
 
-		<!-- I want this section to look like a sentence. -->
-		<div id="conversioncontainer">
-			<label for="conversiontext"> Convert </label>
-			<input type="text" id="conversiontext">
-			<label for="conversiontext"> into </label>
-			<label for="celsiusrad"> Celsius </label>
-			<input type="radio" id="celsiusrad" name="conversionrad" value="celsius">
-			<label for="fahrenheitrad"> Fahrenheit </label>
-			<input type="radio" id="fahrenheitrad" name="conversionrad" value="fahenrenheit">
-		</div><br>
+			<!-- I want this section to look like a sentence. -->
+			<div id="conversioncontainer">
+				<label for="conversiontext"> Convert </label>
+				<input type="text" id="conversiontext">
+				<label for="conversiontext"> into </label>
+				<label for="celsiusrad"> Celsius </label>
+				<input type="radio" id="celsiusrad" name="conversionrad" value="celsius">
+				<label for="fahrenheitrad"> Fahrenheit </label>
+				<input type="radio" id="fahrenheitrad" name="conversionrad" value="fahenrenheit">
+			</div><br>
 	
-		<div id="buttoncontainer">
-			<input type="button" id="convertbutton" value="Convert">
-			<input type="button" id="clearbutton" value="Clear">
-		</div><br>
+			<div id="buttoncontainer">
+				<input type="button" id="convertbutton" value="Convert">
+				<input type="button" id="clearbutton" value="Clear">
+			</div><br>
 
-	</form><br>
+		</form><br>
 
-	<p id="tempoutput"> Please enter a temperature to convert and select Celsius or Fahrenheit. </p>
+		<p id="tempoutput"> Please enter a temperature and select Celsius or Fahrenheit. </p><br><br>
+	
+				<!-- Obligatory thermometer image. I'm putting it below so it doesn't mess up the flow of my page but I assure you I could put it to the left if I wanted to. -->
+				<img src="images/thermometer.png" alt="An image of a thermometer" id="thermimg">
 
 	</div>
 	<script src="js/scripts.js"></script>
+
+
 </body>
 
 </html>
