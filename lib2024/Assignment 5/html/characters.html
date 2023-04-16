@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <title> Character Guide </title>
+
+    <meta name="description" content="A character guide for hit 1995 RPG As the Bat Flies.">
+    <meta name="keywords" content="RPG, party, role-playing game, SNES, As the Bat Flies">
+    <meta name="author" content="Jeremy M. Kerr">
+    <meta name="robots" content="index, follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="images/x-icon" href="../images/icon/favicon.png">
+    <link rel="stylesheet" href="../css/characters-css.css">
+
+
+</head>
+
+<body>
+
+    <!-- This will be our template for our page titles and the navigation bar. There will be buttons that lead to each page. I am going to set up some JavaScript so the bat animates when the mouse is hovering over it. Additionally, I'm using the onclick method here to switch between my pages. I learned this from Niyati Thakkar at Scaler Topics. -->
+    <div id="navigation-container">
+        <h1> <span id="title-of-game">As the Bat Flies </span> <img src="../images/party-sprites/title-bat.png" id="anim-bat" alt="A small, purple bat."> Official Fansite 
+        <button onclick="window.location.href='../html/index.html';"> Home </button>
+        <button onclick="window.location.href='../html/characters.html';"> Characters </button>
+        <button onclick="window.location.href='../html/level-guide.html';"> Level Guide </button>
+        <button onclick="window.location.href='../html/credits.html';"> Credits </button>
+        <button onclick="window.location.href='../html/contact-us.html';"> Contact Us </button> </h1>
+
+    </div><br>
+
+
+    <!-- content-container is going to be used as the template for all subpages. -->
+
+    <div id="content-container">
+        <h2> Character Guide </h2>
+
+        <!-- Going to use a flexbox to get two columns. -->
+
+        <div id="flex-container">
+
+            <!-- Originally I was going to use a bunch of canvases here and animate my character sprites like I did with assignment 3. But it occurs to me that I don't have to and that I have a far easier animation method I can use now. Replacing the static images with gifs via the same script I used for the bat in the website title. -->
+            <div>
+                <div class="character-container">
+                    <img src="../images/party-sprites/agathion.png" id="agathion-sprite" alt="A small, green goblin with a pink hat and a stick." height="190" width="190">
+                </div>
+
+              <!-- These divs are going to contain four buttons that will correspond to each character sprite and can be clicked to animate the sprite. There will be a JavaScript trigger from the buttons that swaps the image for the corresponding gif. -->
+
+                <div class="button-container">
+                    <p> Play animation: </p>
+                    <button id="agathion-idle"> Idle </button>
+                    <button id="agathion-attack"> Attack </button>
+                    <button id="agathion-spell"> Spell </button>
+                    <button id="agathion-stop"> Stop </button>
+                </div>
+
+
+                <div class="character-container">
+                    <img src="../images/party-sprites/batricia.png" id="batricia-sprite" alt="A small, cute bat." height="160" width="160">
+                </div>
+
+                <div class="button-container">
+                    <p> Play animation: </p>
+                    <button id="batricia-idle"> Idle </button>
+                    <button id="batricia-attack"> Attack </button>
+                    <button id="batricia-spell"> Spell </button>
+                    <button id="batricia-stop"> Stop </button>
+                </div>
+
+
+                <div class="character-container">
+                    <img src="../images/party-sprites/brooce.png" id="brooce-sprite" alt="A sinister bedsheet ghost." height="140" width="140">
+                </div>
+
+                <div class="button-container">
+                    <p> Play animation: </p>
+                    <button id="brooce-idle"> Idle </button>
+                    <button id="brooce-attack"> Attack </button>
+                    <button id="brooce-spell"> Spell </button>
+                    <button id="brooce-stop"> Stop </button>
+                </div>
+
+
+                <div class="character-container">
+                    <img src="../images/party-sprites/domovoi.png" id="domovoi-sprite" alt="A small, blue creature from slavic folklore." height="190" width="190">
+                </div>
+
+                <div class="button-container">
+                    <p> Play animation: </p>
+                    <button id="domovoi-idle"> Idle </button>
+                    <button id="domovoi-attack"> Attack </button>
+                    <button id="domovoi-spell"> Spell </button>
+                    <button id="domovoi-stop"> Stop </button>
+                </div>
+            </div>
+
+            <div id="text-container">
+                <div>
+                    <h3> Agathion </h3>
+
+
+                </div>
+
+                <div>
+                    <h3> Batricia </h3>
+
+
+
+                </div>
+
+                <div>
+                    <h3> Brooce </h3>
+
+
+
+                </div>
+
+                <div>
+                    <h3> The Domovoi </h3>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <!-- Adding a copyright message here. Using span to modify some of the text. This is actually the first time I'm using a class. -->
+        <p id="copyright-notice"> <span class="copyright-title"> As the Bat Flies </span>Official Fansite copyright 2005. Developed by <span class="copyright-title">Purple Aster Studios. </span></p>
+
+    </div>
+
+    <script src="../js/characters-js.js"></script>
+
+
+</body>
+
+
+</html>

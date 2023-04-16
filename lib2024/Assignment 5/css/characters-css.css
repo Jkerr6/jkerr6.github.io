@@ -1,0 +1,158 @@
+body {
+    background-image: url("../images/background/haunted-house.jpg");
+    background-size: 1900px;
+    /* Scaling the background image and fixing it so it doesn't scroll. Learned from W3Schools. */
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Adding a background colour for computers that can't render background image. This dark, burnt orange colour is colour picked from the background image. */
+    background-color: #2b1a14;
+}
+
+/* Our content windows are defined here. I used the Final Fantasy fansite as a model for how this should look. */
+#navigation-container {
+    background-color: black;
+    border: 10px double #503e6f;
+    width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(131, 133, 147);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 31px;
+}
+
+h1 img {
+    image-rendering: pixelated;
+}
+
+h1 button {
+    color: #736ab3;
+    background-color: black;
+    border: #736ab3 solid 3px;
+    height: 56px;
+    width: 90px;
+    transform: translate(13px, -2PX);
+}
+
+/* Give the buttons a little spice. */
+h1 button:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+h1 button:active {
+    transform: translate(14px);
+}
+
+#title-of-game {
+    margin-left: 6px;
+    color: #736ab3;
+}
+
+
+#content-container {
+    background-color: black;
+    border: 10px double #503e6f;
+    width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #736ab3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-top: 0px;
+}
+
+p {
+    color: rgb(131, 133, 147);
+    margin-left: 6px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#copyright-notice {
+    vertical-align: bottom;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright-title {
+    color: #736ab3;
+    font-weight: bold;
+}
+
+/* Template section ends here. Everything below is specific to the character page. */
+
+#flex-container {
+    display: flex;
+}
+
+/* Going to try to use a flexbox to make two columns. One will contain the images and buttons and the other will contain the text content. */
+
+.character-container {
+    height: 200px;
+    width: 210px;
+}
+
+.character-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: pixelated;
+}
+
+/* Need to adjust the position of these two sprites since they're a bit off kilter vertically. The translateY can correct this. */
+
+#batricia-sprite {
+    transform: translateY(15px);
+}
+
+#brooce-sprite {
+    transform: translateY(32px);
+}
+
+.button-container {
+    width: 210px;
+    margin-top: -16px;
+    text-align: center;
+}
+
+/* Duplicating the style from above to keep a unified theme. */
+
+.button-container button {
+    color: #736ab3;
+    background-color: black;
+    border: #736ab3 solid 3px;
+    height: 56px;
+    width: 90px;
+    transform: translateY(-11px);
+    margin-bottom: 3px;
+}
+
+.button-container button:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.button-container button:active {
+    transform: translate(1px, -10px);
+}
+
+#text-container p {
+    color: rgb(131, 133, 147);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#text-container div {
+    height: 330px;
+    margin-left: 5px;
+}
+
+h3 {
+    color: #736ab3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

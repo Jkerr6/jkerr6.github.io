@@ -1,0 +1,128 @@
+body {
+    background-image: url("../images/background/haunted-house.jpg");
+    background-size: 1900px;
+    /* Scaling the background image and fixing it so it doesn't scroll. Learned from W3Schools. */
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Adding a background colour for computers that can't render background image. This dark, burnt orange colour is colour picked from the background image. */
+    background-color: #2b1a14;
+}
+
+/* Our content windows are defined here. I used the Final Fantasy fansite as a model for how this should look. */
+#navigation-container {
+    background-color: black;
+    border: 10px double #503e6f;
+    width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(131, 133, 147);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 31px;
+}
+
+h1 img {
+    image-rendering: pixelated;
+}
+
+h1 button {
+    color: #736ab3;
+    background-color: black;
+    border: #736ab3 solid 3px;
+    height: 56px;
+    width: 90px;
+    transform: translate(13px, -2PX);
+}
+
+/* Give the buttons a little spice. */
+h1 button:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+h1 button:active {
+    transform: translate(14px);
+}
+
+#title-of-game {
+    margin-left: 6px;
+    color: #736ab3;
+}
+
+
+#content-container {
+    background-color: black;
+    border: 10px double #503e6f;
+    width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #736ab3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+p {
+    color: rgb(131, 133, 147);
+    margin-left: 6px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#copyright-notice {
+    vertical-align: bottom;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright-title {
+    color: #736ab3;
+    font-weight: bold;
+}
+
+/* Template section ends here. Everything below is specific to the level guide. */
+
+#flex-container {
+    display: flex;
+}
+
+.creature-container {
+    height: 240px;
+    width: 210px;
+    transform: translateX(-20px);
+    text-align: center;
+}
+
+.creature-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: pixelated;
+}
+
+#text-container p {
+    color: rgb(131, 133, 147);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#text-container div {
+    height: 235px;
+    margin-left: 5px;
+    transform: translateY(-48px);
+}
+
+h3 {
+    color: #736ab3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#note-text {
+    font-size: 12px;
+    transform: translateY(-10px);
+}

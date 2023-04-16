@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <title> Level Guide </title>
+
+    <meta name="description" content="A level guide for hit 1995 RPG As the Bat Flies. Also contains boss descriptions.">
+    <meta name="keywords" content="RPG, role-playing, monsters, levels, dungeons, bosses">
+    <meta name="author" content="Jeremy M. Kerr">
+    <meta name="robots" content="index, follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="images/x-icon" href="../images/icon/favicon.png">
+    <link rel="stylesheet" href="../css/levels-css.css">
+
+
+</head>
+
+<body>
+
+    <!-- This will be our template for our page titles and the navigation bar. There will be buttons that lead to each page. I am going to set up some JavaScript so the bat animates when the mouse is hovering over it. Additionally, I'm using the onclick method here to switch between my pages. I learned this from Niyati Thakkar at Scaler Topics. -->
+    <div id="navigation-container">
+        <h1> <span id="title-of-game">As the Bat Flies </span> <img src="../images/party-sprites/title-bat.png" id="anim-bat" alt="A small, purple bat."> Official Fansite 
+        <button onclick="window.location.href='../html/index.html';"> Home </button>
+        <button onclick="window.location.href='../html/characters.html';"> Characters </button>
+        <button onclick="window.location.href='../html/level-guide.html';"> Level Guide </button>
+        <button onclick="window.location.href='../html/credits.html';"> Credits </button>
+        <button onclick="window.location.href='../html/contact-us.html';"> Contact Us </button> </h1>
+
+    </div><br>
+
+
+    <!-- So here I want a flexbox with one column for images and another column for text. Pretty straightforward. -->
+
+    <div id="content-container">
+        <h2> Level Guide </h2>
+
+        <did id="flex-container">
+
+                <div>
+
+                    <!-- These images will have mouse hover animations like the bat in the title. I will use the same method of replacing the normal image with a gif using .src in the JavaScript. -->
+                    <div class="creature-container">
+                        <img src="../images/enemy-sprites/hunt-bug.png" id="hunter-bug" alt="A large, fearsome insect with prominent mandibles." height="170" width="170">
+                        <p> The Hunter Bug </p>
+                    </div>
+
+                    <div class="creature-container">
+                        <img src="../images/enemy-sprites/eyefoot.png" id="eyefoot" alt="A monster shaped like an eyeball with a single talon attached" height="180" width="180">
+                        <p> The Eyefoot </p>
+                    </div>
+
+                    <div class="creature-container">
+                        <img src="../images/enemy-sprites/recluse.png" id="recluse" alt="A spider wearing a white hat." height="140" width="140">
+                        <p> The Recluse </p>
+                    </div>
+
+                    <div class="creature-container">
+                        <img src="../images/enemy-sprites/ghost-knight.png" id="ghost-knight" alt="A pale blue person with white hair and a large sword" height="160" width="160">
+                        <p> The Ghost Knight </p>
+                    </div>
+
+                    <div class="creature-container">
+                        <img src="../images/enemy-sprites/thing.png" id="thing-in-dark" alt="An ominous set of red eyes." height="180" width="180">
+                        <p> The Thing in the Dark </p>
+                    </div>
+
+                </div>
+
+
+                <div id="text-container">
+
+                    <div>
+                        <p id="note-text"> NOTE: To view animations, hover mouse over boss sprites. </p>
+                        <h3> Level 1: The First Floor </h3>
+
+
+
+                    </div>
+
+                    <div>
+                        <h3> Level 2: The Attic </h3>
+
+
+
+                    </div>
+
+                    <div>
+                        <h3> Level 3: The Basement </h3>
+
+
+
+                    </div>
+
+                    <div>
+                        <h3> Level 4: The Crypts </h3>
+
+
+
+                    </div>
+
+                    <div>
+                        <h3> Level 5: Far Beneath the Earth </h3>
+
+
+                        
+                    </div>
+
+                </div>
+
+        </did>
+        
+
+
+        <!-- Adding a copyright message here. Using span to modify some of the text. This is actually the first time I'm using a class. -->
+        <p id="copyright-notice"> <span class="copyright-title"> As the Bat Flies </span>Official Fansite copyright 2005. Developed by <span class="copyright-title">Purple Aster Studios. </span></p>
+
+
+
+    </div>
+
+    <script src="../js/levels-js.js"></script>
+
+
+</body>
+
+
+</html>
