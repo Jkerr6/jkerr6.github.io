@@ -66,12 +66,14 @@ h2 {
     font-weight: bold;
     margin-left: 6px;
     margin-top: 0px;
+    margin-bottom: -6px;
 }
 
 p {
     color: rgb(131, 133, 147);
     margin-left: 6px;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    margin-right: 2px;
 }
 
 #copyright-notice {
@@ -83,4 +85,36 @@ p {
 .copyright-title {
     color: #736ab3;
     font-weight: bold;
+}
+
+/* Here is the end of the template section. Below is styling for the text in this section. */
+
+h3 {
+    color: #736ab3;
+    margin-left: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+li {
+    color: rgb(131, 133, 147);
+    margin-left: 6px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Need a cross through this text for comedic effect. */
+
+#crossed-out {
+    text-decoration: line-through;
+}
+
+/* Flex container to do columns or else this section looks ridiculous. */
+
+#flex-container {
+    display: flex;
+}
+
+#flex-container div {
+    width: 480px;
+    margin-right: 6px;
 }
