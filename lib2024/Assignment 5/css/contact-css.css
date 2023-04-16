@@ -84,3 +84,53 @@ p {
     color: #736ab3;
     font-weight: bold;
 }
+
+/* Changing the colour of the contact types. */
+.address-info {
+    color:#736ab3;
+}
+
+label {
+    color: rgb(131, 133, 147);
+    margin-left: 6px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* I need the text box to be larger. */
+#content-field {
+    display: block;
+    margin: auto;
+    width: 980px;
+    height: 300px;
+}
+
+/* Need to style the button as well. */
+
+form button {
+    color: #736ab3;
+    background-color: black;
+    border: #736ab3 solid 3px;
+    height: 56px;
+    width: 90px;
+    transform: translateX(500px);
+}
+
+form button:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+form button:active {
+    transform: translate(501px, 2px);
+}
+
+/* I want the input boxes to blend in a bit better. */
+
+input {
+    color:rgb(131, 133, 147);
+    background-color: rgb(21, 21, 21);
+}
+
+/* I tried to get the autofill background colour to change from the standard white but could not figure it out. This below code makes the text blue when you're actively typing. */
+input:focus {
+    color: #736ab3;
+}
