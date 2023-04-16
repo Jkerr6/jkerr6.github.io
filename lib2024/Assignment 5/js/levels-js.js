@@ -9,7 +9,7 @@ animBat.addEventListener("mouseleave", PauseBat);
 /* This function fires when the mouse is hovered over the bat. The function changes the src of the image to the gif. */
 function AnimateBat () {
     animBat.src = "../images/animated-sprites/title-bat-animated.gif";
-};
+}
 
 /* This function fires when the mouse is no longer over the bat. This changes the src of the image back to the still image. */
 function PauseBat () {
@@ -47,40 +47,40 @@ animThing.addEventListener("mouseleave", PauseThing);
 
 function AnimateHunter () {
     animHunter.src = "../images/animated-enemies/hunt-bug-animated.gif";
-};
+}
 
 function PauseHunter () {
     animHunter.src = "../images/enemy-sprites/hunt-bug.png";
-};
+}
 
 function AnimateEyefoot () {
     animEyefoot.src = "../images/animated-enemies/eyefoot-animated.gif";
-};
+}
 
 function PauseEyefoot () {
     animEyefoot.src = "../images/enemy-sprites/eyefoot.png";
-};
+}
 
 function AnimateRecluse () {
     animRecluse.src = "../images/animated-enemies/recluse-animated.gif";
-};
+}
 
 function PauseRecluse () {
     animRecluse.src = "../images/enemy-sprites/recluse.png";
-};
+}
 
 function AnimateKnight () {
     animKnight.src = "../images/animated-enemies/ghost-knight-animated.gif";
-};
+}
 
 function PauseKnight () {
     animKnight.src = "../images/enemy-sprites/ghost-knight.png";
-};
+}
 
 function AnimateThing () {
     animThing.src = "../images/animated-enemies/thing-animated.gif";
-};
+}
 
 function PauseThing () {
     animThing.src = "../images/enemy-sprites/thing.png";
-};
+}

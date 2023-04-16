@@ -9,7 +9,7 @@ animBat.addEventListener("mouseleave", PauseBat);
 /* This function fires when the mouse is hovered over the bat. The function changes the src of the image to the gif. */
 function AnimateBat () {
     animBat.src = "../images/animated-sprites/title-bat-animated.gif";
-};
+}
 
 /* This function fires when the mouse is no longer over the bat. This changes the src of the image back to the still image. */
 function PauseBat () {
@@ -56,19 +56,19 @@ agathionStop.addEventListener("click", StopAnimAgathion);
 
 function IdleAnimAgathion () {
     animAgathion.src = "../images/animated-sprites/agathion-idle.gif";
-};
+}
 
 function AtkAnimAgathion () {
     animAgathion.src = "../images/animated-sprites/agathion-attack.gif";
-};
+}
 
 function SpellAnimAgathion () {
     animAgathion.src = "../images/animated-sprites/agathion-spell.gif";
-};
+}
 
 function StopAnimAgathion () {
     animAgathion.src = "../images/party-sprites/agathion.png";
-};
+}
 
 /* I basically just need to repeat this for the other three characters and this page is done. */
 
@@ -79,19 +79,19 @@ batriciaStop.addEventListener("click", StopAnimBatricia);
 
 function IdleAnimBatricia () {
     animBatricia.src = "../images/animated-sprites/batricia-idle.gif";
-};
+}
 
 function AtkAnimBatricia () {
     animBatricia.src = "../images/animated-sprites/batricia-attack.gif";
-};
+}
 
 function SpellAnimBatricia () {
     animBatricia.src = "../images/animated-sprites/batricia-spell.gif";
-};
+}
 
 function StopAnimBatricia () {
     animBatricia.src = "../images/party-sprites/batricia.png";
-};
+}
 
 
 
@@ -102,19 +102,19 @@ brooceStop.addEventListener("click", StopAnimBrooce);
 
 function IdleAnimBrooce () {
     animBrooce.src = "../images/animated-sprites/brooce-idle.gif";
-};
+}
 
 function AtkAnimBrooce () {
     animBrooce.src = "../images/animated-sprites/brooce-attack.gif";
-};
+}
 
 function SpellAnimBrooce () {
     animBrooce.src = "../images/animated-sprites/brooce-spell.gif";
-};
+}
 
 function StopAnimBrooce () {
     animBrooce.src = "../images/party-sprites/brooce.png";
-};
+}
 
 
 
@@ -125,16 +125,16 @@ domovoiStop.addEventListener("click", StopAnimDomovoi);
 
 function IdleAnimDomovoi () {
     animDomovoi.src = "../images/animated-sprites/domovoi-idle.gif";
-};
+}
 
 function AtkAnimDomovoi () {
     animDomovoi.src = "../images/animated-sprites/domovoi-attack.gif";
-};
+}
 
 function SpellAnimDomovoi () {
     animDomovoi.src = "../images/animated-sprites/domovoi-spell.gif";
-};
+}
 
 function StopAnimDomovoi () {
     animDomovoi.src = "../images/party-sprites/domovoi.png";
-};
+}

@@ -9,7 +9,7 @@ animBat.addEventListener("mouseleave", PauseBat);
 /* This function fires when the mouse is hovered over the bat. The function changes the src of the image to the gif. */
 function AnimateBat () {
     animBat.src = "../images/animated-sprites/title-bat-animated.gif";
-};
+}
 
 /* This function fires when the mouse is no longer over the bat. This changes the src of the image back to the still image. */
 function PauseBat () {
