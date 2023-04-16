@@ -71,6 +71,7 @@ h2 {
 p {
     color: rgb(131, 133, 147);
     margin-left: 6px;
+    margin-right: 6px;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -155,4 +156,9 @@ h3 {
     color: #736ab3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+/* Adding some styling here on my span to make certain text blue. */
+.blue-text {
+    color: #736ab3;
 }

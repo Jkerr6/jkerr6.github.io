@@ -96,31 +96,37 @@ label {
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
 }
 
-/* I need the text box to be larger. */
+/* I need the text box to be larger and to apply some colour. */
 #content-field {
     display: block;
     margin: auto;
     width: 980px;
     height: 300px;
+    color:rgb(131, 133, 147);
+    background-color: rgb(21, 21, 21);
+    /* Setting a max width here so that the field can't be stretched past the container but I'm leaving the bottom stretching because it's a nice feature for viewing longer messages. */
+    max-width: 980px;
+    min-width: 400px;
+    min-height: 300px;
 }
 
 /* Need to style the button as well. */
 
-form button {
+.contact-button {
     color: #736ab3;
     background-color: black;
     border: #736ab3 solid 3px;
     height: 56px;
     width: 90px;
-    transform: translateX(500px);
+    transform: translateX(430px);
 }
 
-form button:hover {
+.contact-button:hover {
     background-color: rgb(27, 27, 27);
 }
 
-form button:active {
-    transform: translate(501px, 2px);
+.contact-button:active {
+    transform: translate(431px, 2px);
 }
 
 /* I want the input boxes to blend in a bit better. */
@@ -128,9 +134,4 @@ form button:active {
 input {
     color:rgb(131, 133, 147);
     background-color: rgb(21, 21, 21);
-}
-
-/* I tried to get the autofill background colour to change from the standard white but could not figure it out. This below code makes the text blue when you're actively typing. */
-input:focus {
-    color: #736ab3;
 }

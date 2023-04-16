@@ -15,3 +15,47 @@ function AnimateBat () {
 function PauseBat () {
     animBat.src = "../images/party-sprites/title-bat.png";
 }
+
+/* Template ends above. Below is the JavaScript specific to the contact page. I want the clear button to function and the submit button to do a mock submission. */
+
+/* First we need to get our buttons. */
+let submitButton = document.getElementById("submit-button");
+let clearButton = document.getElementById("clear-button");
+
+submitButton.addEventListener("click", SubmitForm);
+clearButton.addEventListener("click", ClearForm);
+
+function SubmitForm () {
+    let nameField = document.getElementById("name-field");
+    let emailField = document.getElementById("email-field");
+    let contentField = document.getElementById("content-field");
+
+    /* I am using this nested if else statement to check to make sure the forms are filled before they can be submitted. The submission doesn't actually do anything but its a good mockup of this type of form. */
+    if (nameField.value == "") {
+        contentField.placeholder = "Please enter your name.";
+        contentField.value = "";
+    } else if (emailField.value == "") {
+        contentField.placeholder = "Please enter your email.";
+        contentField.value = "";
+    } else if (contentField.value == "") {
+        contentField.placeholder = "Please enter a message.";
+        contentField.value = "";
+    } else {
+        nameField.value = "";
+        emailField.value = "";
+        contentField.value = "";
+        contentField.placeholder = "Thank you!";
+    };
+};
+
+/* First, we assign our forms to variables, then we clear them. */
+function ClearForm () {
+    let nameField = document.getElementById("name-field");
+    let emailField = document.getElementById("email-field");
+    let contentField = document.getElementById("content-field");
+
+    nameField.value = "";
+    emailField.value = "";
+    contentField.value = "";
+    contentField.placeholder = "Message here..."
+};
